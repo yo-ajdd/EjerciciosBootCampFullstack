@@ -1,0 +1,43 @@
+<!-- # Parte 2:
+- Ahora la aplicación contará desde que se pulsa el botón generar:
+  - Encima de la grid saldrá un campo de tiempo que irá incrementando cada segundo
+  - Este campo usará el método de javascript "setInterval(function () {ACCIONES}, MILISEGUNDOS);"
+  -Ejemplo que hace un alert con un hola mundo cada 10 segundos: setInterval(function () {alert("Hello world")}, 10000);
+- Ahora la aplicación aceptará solo un valor
+- El valor tiene que ser un número par, en caso de no serlo mostrará un error y no hará nada
+- Con el valor se intentará montar un grid lo más cuadrado posible, para ello se realizarán las siguientes operaciones:
+  - Sus elementos internos deben medir todos lo mismo
+  - Se calculará la raiz cuadrada del número sqrt()
+  - La raiz cuadrada significará las filas y columnas que nos gustaría que ocupara la grid
+  - En función del resto la grid tendrá que crecer en filas y columnas para que todos los elementos quepan
+### por ejemplo:
+>Si ponemos 8 se generará una grid de 3 x 3 con 8 elementos dentro y un hueco vacío al final
+>Si ponemos 20 se generará una grid de 5 x 4 completamente llena
+>Si ponemos 22 se generará una grid de 5 x 5 con tres huecos libres al final -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Ejercicio 2</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='eje2.css'>
+        
+    </head>
+    <body>      
+        <label id="lblTimer">
+          -
+        </label>
+
+        <div id="grid" style="width: 400px; height: 400px;"></div>        
+
+        Celdas:<input type="number" id="cellsNumber">       
+        <button type="button" onclick="getCells()">
+          Generar
+        </button>    
+        <script src='eje2.js'></script>      
+    </body>
+    
+</html>

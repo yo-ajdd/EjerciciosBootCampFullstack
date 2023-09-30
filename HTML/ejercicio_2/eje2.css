@@ -1,0 +1,13 @@
+div {
+    border: 1px;
+    border-style: solid;     
+    border-color: black;    
+}
+
+.floatleft {
+    float: left;
+}
+
+input {
+    margin-top: 6px;
+}

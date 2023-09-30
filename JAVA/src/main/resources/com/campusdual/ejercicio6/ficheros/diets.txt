@@ -1,0 +1,3 @@
+dieta no limite,null,null,null,null,plátano;20;10;0;50
+dieta calorias,20000,null,null,null,patata;25;12;2;40
+dieta macros,null,200,100,300,yogur;10;5;40;125

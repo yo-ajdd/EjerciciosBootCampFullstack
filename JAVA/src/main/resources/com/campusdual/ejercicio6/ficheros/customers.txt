@@ -1,0 +1,3 @@
+pac1,ape1,70,160,30,MALE,null,null,null,null,null,null,dieta no limite
+pac2,ape2,70,160,30,MALE,null,null,null,null,null,null,null
+pac3,ape3,50,170,20,FEMALE,null,null,null,null,null,null,null

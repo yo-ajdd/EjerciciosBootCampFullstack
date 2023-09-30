@@ -1,0 +1,29 @@
+<!-- # Ejercicio de Grid
+Crear una página html con dos inputs(filas y columnas) y un botón y un div de 400x400 px.
+- Tiene que tener un script y una hoja de estilos.
+- La página tiene que generar una cuadricula en el div.
+### por ejemplo:
+> Si ponemos 2, 2 y pulsamos creará 4 elementos, 2 por fila , de 200x200 px.
+> Si ponemos 4, 2 y pulsamos creará 8, 4 por fila, de 100x200 px.
+> Si ponemos 4, 4 y pulsamos creará 16, 4 por fila en 4 columnas, de 100x100 px. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Ejercicio 1</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='eje1.css'>        
+    </head>
+    <body>
+        <div id="grid" style="width: 400px; height: 400px;"></div>
+
+        Filas:<input type="number" id="rownum">
+        Columnas:<input type="number" id="colnum">
+
+        <button type="button" onclick="getDivs()">Generar</button>
+        <script src='eje1.js'></script>
+    </body>
+</html>

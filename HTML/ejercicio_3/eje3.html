@@ -1,0 +1,41 @@
+<!-- Hacer un juego de búsqueda de parejas.
+Habra una variable oculta en js que marque cuantos aciertos se han generado, cuando estos alcancen el número total de parejas se registrará en la parte
+ inferior el número de casillas y los segundos que se tardó.
+Cuando se haga click en una casilla esta mostrará su color y quedará visible, cuando se haga click en otra casilla se compararán sus colores:
+Si son iguales ambas casillas perderan el evento click y aumentarán el conteo de aciertos.
+Si son distintas mostrarán sus colores medio segundo y luego volveran a ponerse en blanco.
+
+Ahora el campo de casillas aceptará un máximo de 50 y utilizará el siguiente array de elementos para mostrar sus colores:
+Para decidir el color de las parejas se utilizará el método "Math.random()" dado en clase.
+const colors = ["yellow","orange","red","blue","green","magenta","blueviolet","pink","maroon",
+"lime","aqua","orange","olive","grey","gold","cyan","silver","purple","navy","teal","beige","darkslateblue","deeppink","fuchsia","salmon"]; -->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='eje3.css'>
+    </head>
+
+    <body>
+        <label id="lblTimer">
+            -
+        </label>
+
+        <div id="grid" style="width: 400px; height: 400px;"></div>
+
+        Celdas:<input type="number" id="cellsNumber" />
+        <button type="button" onclick="getCells()">
+            Generar
+        </button>
+        <p></p>
+        <label id="lblMatches"></label>
+        <script src='eje3.js'></script>
+    </body>
+    
+</html>
